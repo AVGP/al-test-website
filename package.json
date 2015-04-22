@@ -1,0 +1,17 @@
+{
+  "name": "archilogic-website",
+  "version": "1.0.0",
+  "description": "Our website",
+  "main": "index.html",
+  "devDependencies": {
+    "susi": "^0.2.1",
+    "watch": "^0.16.0"
+  },
+  "scripts": {
+    "dev": "watch \"npm run preview\" ./raw-content/ ./layouts/",
+    "preview": "susi ./raw-content/ ./ ./layouts/",
+    "publish": "susi ./raw-content/ ./output/ ./layouts/"
+  },
+  "author": "",
+  "license": "ISC"
+}
